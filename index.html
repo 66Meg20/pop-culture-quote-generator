@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI quote generator</title>
   </head>
   <body>
     <div class="container">
       <header><h1>AI quote generator</h1></header>
       <main>
-        <form>
+        <form id="quote-generator-form">
           <input
             type="text"
             placeholder="Enter the book or movie title to get a quote"
@@ -18,8 +19,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-
-        <div class="quote">This is where the quote will be placed</div>
+        <div class="quote" id="quote"></div>
       </main>
 
       <footer>
