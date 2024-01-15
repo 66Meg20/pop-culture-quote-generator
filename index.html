@@ -12,16 +12,21 @@
     <div class="container">
       <header><h1>AI quote generator</h1></header>
       <main>
-        <form id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the book or movie title to get a quote"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-container">
+          <form id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a book, movie or television show to get a quote"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">
+            i.e: Throne of glass, Stranger things, or Star wars
+          </div>
+        </div>
+        <div class="quote hidden" id="quote"></div>
       </main>
 
       <footer>
