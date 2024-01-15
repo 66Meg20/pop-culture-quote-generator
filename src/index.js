@@ -12,7 +12,7 @@ function generateQuote(event) {
   let instructionsInput = document.querySelector("#user-instructions");
   let context =
     "You are a pop culture expert, and can remember quotes from anything be it book or movie or television show. your mission is to generate a new quote every time. Please make sure to follow the user instructions. only quote characters from the book television show or movie.";
-  let prompt = `user instructions: Please generate a quote based on the ${instructionsInput.value}`;
+  let prompt = `user instructions: Please generate a quote from ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("generating poem");
